@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: grid;
+    place-content: center;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    border: 1px solid;
+    padding: 20px;
+    place-items: start;
+    width: 100%;
+}
+
+label{
+    grid-column: 1 / 9;
+    align-self: center;
+    margin-top: 40px;
+}
+
+input{
+    grid-column: 1 / 9;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.btn{
+    grid-column: 1 / 9;
+    width: 80px;
+    border-radius: 10px;
+    margin: 40px auto;
+    border: 1px solid;
+    height: 30px;
+}
+
+textarea{
+    grid-column: 1 / 9;
+    width: 500px;  
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+    min-height: 60px;
+    max-height: 100px;
+}
+
+@media screen and (max-width: 550px){
+    input{
+        width: 290px;
+    }
+
+    textarea{
+        width: 290px;
+    }
+}
